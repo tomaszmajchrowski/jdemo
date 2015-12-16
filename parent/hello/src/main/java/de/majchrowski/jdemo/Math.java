@@ -3,14 +3,19 @@ package de.majchrowski.jdemo;
 public class Math {
 	
 	public boolean isEven(int intArg) {
-		if ((intArg mod 2) == 0)
+
+		boolean isE;
+
+		if ((intArg % 2) == 0)
 		{
-		    isEven = true;
+		    isE = true;
 		}
 		else
 		{
-		    isEven = false;
+		    isE = false;
 		}	
+		
+		return isE;
 	}
 
 }
