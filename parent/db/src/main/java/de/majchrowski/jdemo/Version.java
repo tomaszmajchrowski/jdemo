@@ -1,6 +1,5 @@
 package de.majchrowski.jdemo;
 
-package zetcode;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
