@@ -15,6 +15,43 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
+ <!--
+ ===========================================
+ profiles section
+ ===========================================
+ -->  
+ <profiles>  
+	 <profile>  
+	  <id>code-exec</id>  
+	  <build>  
+	   <plugins>  
+	    <plugin>  
+	     <groupId>org.codehaus.mojo</groupId>  
+	     <artifactId>exec-maven-plugin</artifactId>  
+	     <version>1.1.1</version>  
+	     <executions>  
+	      <execution>  
+	       <phase>test</phase>  
+	       <goals>  
+	        <goal>java</goal>  
+	       </goals>  
+	       <configuration>  
+	        <mainClass>de.majchrowski.jdemo.Version</mainClass>  
+	        <arguments>   
+	        </arguments>  
+	       </configuration>  
+	      </execution>  
+	     </executions>  
+	    </plugin>  
+	   </plugins>  
+	  </build>  
+	 </profile>  
+</profiles>  
+ <!--
+ ===========================================
+ dependencies section
+ ===========================================
+ -->  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
