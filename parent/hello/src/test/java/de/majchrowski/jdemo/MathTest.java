@@ -17,10 +17,10 @@ public class MathTest extends TestCase {
 	}
 
 	public void testIsEven() {
-		/*int sampleA=5;
+		int sampleA=5;
 		int sampleB=4;
 		boolean resA=Math.isEven(sampleA);
-		assertFalse('5 is not even', resA);*/
+		assertFalse('5 is not even', resA);
 	}
 
 }
