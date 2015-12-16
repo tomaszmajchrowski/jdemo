@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 
 public class Version {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         Connection con = null;
         Statement st = null;
@@ -51,5 +51,10 @@ public class Version {
                 lgr.log(Level.WARNING, ex.getMessage(), ex);
             }
         }
+        System.out.println("==================================");
+        MySQLAccess dao = new MySQLAccess();
+        dao.readDataBase();
+        	System.out.println("==================================");
     }
+    
 }
